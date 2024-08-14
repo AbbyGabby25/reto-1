@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecriptador Alura</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo_header.png" alt="Logo">
+    </header>
+    <div class="contenedor">
+        <div class="div_principal">
+            <textarea name="texto_inicial" id="texto_inicial"></textarea>
+            <div>
+                <p> <img id="advertencia" src="img/advertencia.png" alt="advertencia">Advertencia con icono</p>
+                <div>
+                    <button type="button" onclick="boton_1()" id="boton_encriptar">Encriptar</button>
+                    <button type="button" onclick="boton_2()" id="boton_desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="div_principal" id="contenedor_1">
+            <img src="img/imagen2.png" alt="Encriptar">
+            <h2>Ningún mensaje fue encontrado</h2>
+            <h4>Ingresa el texto que deseas encriptar o desencriptar</h4>
+        </div>
+        <div class="div_principal" style="display: none;" id="contenedor_res">
+            <div id="resultados"></div>
+            <button type="button" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
